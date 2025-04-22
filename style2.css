@@ -1,0 +1,38 @@
+window {
+  background-color: #5FA9B8;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+label#error_label {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #357ab7;
+  transition: background-color 0.2s ease;
+}
+
+button:active {
+  background-color: #285a8c;
+}
