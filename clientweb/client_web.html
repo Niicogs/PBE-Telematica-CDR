@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CDR Client Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>CDR Client Web</h2>
+
+  <div id="login">
+    <h3>Login</h3>
+    <input type="text" id="username" placeholder="Enter username (name)" />
+    <input type="text" id="password" placeholder="Enter password (student_id)" />
+    <button onclick="authenticate()">Login</button>
+    <p id="loginMessage"></p>
+  </div>
+
+  <div id="querySection" style="display:none;">
+    <h3>Query</h3>
+    <select id="tableSelect">
+      <option value="tasks">Tasks</option>
+      <option value="timetables">Timetables</option>
+      <option value="marks">Marks</option>
+    </select>
+    <input type="text" id="queryInput" placeholder="Enter query string, e.g. date[gte]=now" />
+    <button onclick="sendQuery()">Send Query</button>
+
+    <pre id="results"></pre>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
